@@ -69,25 +69,44 @@ body {
   padding-top: 5em;
 }
 
-.styled select {
-  width: 670px;
-  height: 72px;
-  overflow: hidden;
-  background: url(../images/la.jpg) no-repeat right #ddd;
+.selectLabel {
+  position: relative;
 }
 
-/*.styled-select select {
+#city-type {
+  color: black;
+  font-size: 38px;
   background: transparent;
-  width: 268px;
-  padding: 5px;
-  font-size: 16px;
-  line-height: 1;
-  border: 0;
-  border-radius: 0;
-  height: 34px;
+  border: 1px solid white;
+  padding: 0 30px;
+  display: inline-block;
+  min-width: 680px;
+  font-family: helvetica, arial, sans-serif;
+  height: 72px;
+  line-height: 74px;
+  vertical-align: middle;
+  box-shadow: #111 0 0 20px;
   -webkit-appearance: none;
-}*/
+}
 
+.citiesSelectBg {
+  position: absolute;
+  width: 680px;
+  height: 72px;
+  background-color: tomato;
+  z-index: -2;
+}
+
+.selectLabel:after {
+  position: absolute;
+  right: 0px;
+  content: "\f072";
+  font-family: "FontAwesome";
+  font-size: 30px;
+  background-color: yellow;
+  padding: 0.5em;
+  z-index: -1;
+}
 
 header {
   background: rgba(0,0,0, .5);
@@ -105,45 +124,6 @@ header {
 .title p {
   font-size: 22px;
   font-weight: normal
-}
-
-#city-type {
-  color: pink;
-  font-size: 38px;
-  background: transparent;
-  border: 1px solid white;
-  padding: 5px;
-  display: inline-block;
-  width: 680px;
-  margin-right: 24px;
-  font-family: helvetica, arial, sans-serif;
-  height: 72px;
-  line-height: 74px;
-  vertical-align: middle;
-  box-shadow: #111 0 0 20px;
-  -webkit-appearance: none;
-}
-
-#submit-btn {
-  background: #ffe500;
-  color: #000;
-  font-size: 38px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 1px solid #111;
-  text-align: center;
-  display: inline-block;
-  width: 250px;
-  height: 72px;
-  line-height: 74px;
-  vertical-align: middle;
-  box-shadow: #111 0 0 50px;
-  font-family: helvetica, arial, sans-serif;
-  cursor: pointer;
-}
-
-#submit-btn:hover {
-  background: #fff600;
 }
 
 .nyc {
